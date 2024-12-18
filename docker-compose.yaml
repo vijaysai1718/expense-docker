@@ -21,6 +21,7 @@ services:
   backend:
     image: backend:v1.0
     container_name: backend
+    cmd: ["sleep","200"]
     depends_on: 
     - mysql
   frontend:
