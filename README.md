@@ -12,7 +12,7 @@
 - **Version Tagging:** Tag images with version numbers (e.g., `myapp:1.0`) instead of just using `latest` to avoid ambiguity and ensure consistency across deployments.
 
 ## 4. Run as Non-Root User
-- **Non-Root User:** Create and run containers with a non-root user to improve security. You can add a user in the Dockerfile using `RUN useradd -m myuser` and switch to that user with `USER myuser`.
+- **Non-Root User:** Create and run containers with a non-root user to improve security. You can add a user in the Dockerfile using `RUN useradd -m myuser` and switch to that user with the `USER myuser`.
 
 ## 5. Optimize Layer Caching
 - **Layer Order:** Order your Dockerfile instructions to maximize layer caching. Frequently changing commands should be at the end of the Dockerfile.
