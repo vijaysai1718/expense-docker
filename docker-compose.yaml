@@ -21,7 +21,7 @@ services:
   backend:
     image: backend:v1.0
     container_name: backend
-    cmd: ["sleep","10"]
+    command: sh -c "sleep 20 && node /opt/server/index.js"
     depends_on: 
     - mysql
   frontend:
